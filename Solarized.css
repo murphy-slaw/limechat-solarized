@@ -1,6 +1,7 @@
 html {
-  font-family: 'Menlo';
-  font-size: 14px;
+  font-family: 'Avenir';
+  font-size: 18px;
+  font-weight: regular;
   background-color: #fdf6e3; /* base3 */
   color: #657b83;            /* base00 */
 }
@@ -17,10 +18,10 @@ body {}
 
 .line {}
 .line[alternate=even] {}
-.line[alternate=odd] {} 
+.line[alternate=odd] { background-color: #eee8d5; }  /* base2 */
 .line[highlight=true] {}
 
-.time { color: #93a1a1; }   /* base1 */
+.time { font-size: 75%; color: #93a1a1; }   /* base1 */
 .place { color: #93a1a1; }  /* base1 */
 
 .sender[type=normal] { color: #268bd2; } /* blue */
@@ -35,7 +36,8 @@ body {}
 .message[type=invite], .message[type=wallops] {
   color: #93a1a1; /* base1 */
   float: right;
-  font-size: 90%;
+  font-size: 75%;
+  font-weight: lighter;
 }
 
 .message[type=topic] {
